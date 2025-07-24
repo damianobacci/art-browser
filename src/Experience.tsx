@@ -6,9 +6,9 @@ import * as THREE from "three"
 export default function Experience() {
     const torusRef = useRef<THREE.Mesh>(null)
 
-    useFrame(() =>
+    useFrame((state, delta) =>
     {
-        torusRef.current!.rotation.y += 0.01
+        torusRef.current!.rotation.y += delta
     })
 
     return <>
