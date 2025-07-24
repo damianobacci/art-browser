@@ -16,8 +16,8 @@ You want to explore a monument and learn all its details? ArtBrowser lets you up
 
 ## Tech Stack
 
-- **Frontend**: Vite, React, React Three Fiber, Drei
-- **Backend**: Node.js (Express)
+- **Frontend**: Vite, React, React Three Fiber, Drei, ShadCN
+- **Backend**: Node.js, Express, MongoDB
 
 <!-- ## Expanding the ESLint configuration
 
