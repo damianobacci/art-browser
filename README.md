@@ -1,13 +1,25 @@
-# React + TypeScript + Vite
+# ArtBrowser
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ArtBrowser is a project to explore 3D art, pin points of interest, and tell their stories.
 
-Currently, two official plugins are available:
+## Why
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You want to explore a monument and learn all its details? ArtBrowser lets you upload a model, drop interactive pointers, and attach text, media or links—so anyone can browse the piece like a guided tour.
 
-## Expanding the ESLint configuration
+## Features to implement (brainstorming)
+
+- Custom 3D model support: .glb, .gltf, .obj/.mtl, more with plugins?
+- Point-based annotations ("pins") with markdown support, images, video and links.
+- Tour mode: auto-focus through pins in sequence.
+- Mobile-friendly orbit / pan / zoom controls.
+- Search & filter pins by tag or keyword.
+
+## Tech Stack
+
+- **Frontend**: Vite, React, React Three Fiber, Drei
+- **Backend**: Node.js (Express)
+
+<!-- ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
@@ -66,4 +78,4 @@ export default tseslint.config([
     },
   },
 ])
-```
+``` -->
