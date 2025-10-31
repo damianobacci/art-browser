@@ -1,30 +1,22 @@
-# ArtBrowser
+# React + TypeScript + Vite
 
-ArtBrowser is a project to explore 3D art, pin points of interest, and tell their stories.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Why
+Currently, two official plugins are available:
 
-You want to explore a monument and learn all its details? ArtBrowser lets you upload a model, drop interactive pointers, and attach text, media or links—so anyone can browse the piece like a guided tour.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Features to implement (brainstorming)
+## React Compiler
 
-- Custom 3D model support: .glb, .gltf, .obj/.mtl, more with plugins?
-- Point-based annotations ("pins") with markdown support, images, video and links.
-- Tour mode: auto-focus through pins in sequence.
-- Mobile-friendly orbit / pan / zoom controls.
-- Search & filter pins by tag or keyword.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Tech Stack
-
-- **Frontend**: Vite, React, React Three Fiber, Drei, ShadCN
-- **Backend**: Node.js, Express, MongoDB
-
-<!-- ## Expanding the ESLint configuration
+## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
 ```js
-export default tseslint.config([
+export default defineConfig([
   globalIgnores(['dist']),
   {
     files: ['**/*.{ts,tsx}'],
@@ -32,11 +24,11 @@ export default tseslint.config([
       // Other configs...
 
       // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
+      tseslint.configs.recommendedTypeChecked,
       // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
+      tseslint.configs.strictTypeChecked,
       // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+      tseslint.configs.stylisticTypeChecked,
 
       // Other configs...
     ],
@@ -58,7 +50,7 @@ You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-re
 import reactX from 'eslint-plugin-react-x'
 import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config([
+export default defineConfig([
   globalIgnores(['dist']),
   {
     files: ['**/*.{ts,tsx}'],
@@ -78,4 +70,4 @@ export default tseslint.config([
     },
   },
 ])
-``` -->
+```
