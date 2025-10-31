@@ -7,7 +7,11 @@
   "scripts": {
     "dev": "lerna run dev --stream",
     "build": "lerna run build --stream",
-    "start": "lerna run start --stream"
+    "start": "lerna run start --stream",
+    "add-to-api": "yarn workspace api add",
+    "add-to-ui": "yarn workspace ui add",
+    "remove-from-api": "yarn workspace api remove",
+    "remove-from-ui": "yarn workspace ui remove"
   },
   "devDependencies": {
     "lerna": "^9.0.0",
