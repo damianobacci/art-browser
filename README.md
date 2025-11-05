@@ -17,5 +17,5 @@ You want to explore a monument and learn all its details? ArtBrowser lets you up
 ## Tech Stack
 
 - **Monorepo**: Lerna
-- **Frontend**: Vite, React, React Three Fiber, Drei
-- **Backend**: Node.js, Express, MongoDB, Mongoose
+- **Frontend**: Vite, React, React Three Fiber, Drei, Vitest
+- **Backend**: Node.js, Express, MongoDB, Mongoose, Jest
